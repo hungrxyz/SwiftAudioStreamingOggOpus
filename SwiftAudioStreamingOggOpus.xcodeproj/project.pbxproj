@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA7538981B43F07D00F1E36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7538971B43F07D00F1E36C /* AppDelegate.swift */; };
+		FA75389A1B43F07D00F1E36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7538991B43F07D00F1E36C /* ViewController.swift */; };
+		FA75389D1B43F07D00F1E36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA75389B1B43F07D00F1E36C /* Main.storyboard */; };
+		FA75389F1B43F07D00F1E36C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA75389E1B43F07D00F1E36C /* Images.xcassets */; };
+		FA7538A21B43F07D00F1E36C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7538A01B43F07D00F1E36C /* LaunchScreen.xib */; };
+		FA7538AE1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7538AD1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7538A81B43F07D00F1E36C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA75388A1B43F07D00F1E36C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7538911B43F07D00F1E36C;
+			remoteInfo = SwiftAudioStreamingOggOpus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA7538921B43F07D00F1E36C /* SwiftAudioStreamingOggOpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAudioStreamingOggOpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7538961B43F07D00F1E36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7538971B43F07D00F1E36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA7538991B43F07D00F1E36C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA75389C1B43F07D00F1E36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA75389E1B43F07D00F1E36C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA7538A11B43F07D00F1E36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FA7538A71B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAudioStreamingOggOpusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7538AC1B43F07D00F1E36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7538AD1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAudioStreamingOggOpusTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA75388F1B43F07D00F1E36C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7538A41B43F07D00F1E36C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA7538891B43F07D00F1E36C = {
+			isa = PBXGroup;
+			children = (
+				FA7538941B43F07D00F1E36C /* SwiftAudioStreamingOggOpus */,
+				FA7538AA1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests */,
+				FA7538931B43F07D00F1E36C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7538931B43F07D00F1E36C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7538921B43F07D00F1E36C /* SwiftAudioStreamingOggOpus.app */,
+				FA7538A71B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7538941B43F07D00F1E36C /* SwiftAudioStreamingOggOpus */ = {
+			isa = PBXGroup;
+			children = (
+				FA7538971B43F07D00F1E36C /* AppDelegate.swift */,
+				FA7538991B43F07D00F1E36C /* ViewController.swift */,
+				FA75389B1B43F07D00F1E36C /* Main.storyboard */,
+				FA75389E1B43F07D00F1E36C /* Images.xcassets */,
+				FA7538A01B43F07D00F1E36C /* LaunchScreen.xib */,
+				FA7538951B43F07D00F1E36C /* Supporting Files */,
+			);
+			path = SwiftAudioStreamingOggOpus;
+			sourceTree = "<group>";
+		};
+		FA7538951B43F07D00F1E36C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA7538961B43F07D00F1E36C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA7538AA1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7538AD1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.swift */,
+				FA7538AB1B43F07D00F1E36C /* Supporting Files */,
+			);
+			path = SwiftAudioStreamingOggOpusTests;
+			sourceTree = "<group>";
+		};
+		FA7538AB1B43F07D00F1E36C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA7538AC1B43F07D00F1E36C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7538911B43F07D00F1E36C /* SwiftAudioStreamingOggOpus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7538B11B43F07D00F1E36C /* Build configuration list for PBXNativeTarget "SwiftAudioStreamingOggOpus" */;
+			buildPhases = (
+				FA75388E1B43F07D00F1E36C /* Sources */,
+				FA75388F1B43F07D00F1E36C /* Frameworks */,
+				FA7538901B43F07D00F1E36C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftAudioStreamingOggOpus;
+			productName = SwiftAudioStreamingOggOpus;
+			productReference = FA7538921B43F07D00F1E36C /* SwiftAudioStreamingOggOpus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA7538A61B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7538B41B43F07D00F1E36C /* Build configuration list for PBXNativeTarget "SwiftAudioStreamingOggOpusTests" */;
+			buildPhases = (
+				FA7538A31B43F07D00F1E36C /* Sources */,
+				FA7538A41B43F07D00F1E36C /* Frameworks */,
+				FA7538A51B43F07D00F1E36C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7538A91B43F07D00F1E36C /* PBXTargetDependency */,
+			);
+			name = SwiftAudioStreamingOggOpusTests;
+			productName = SwiftAudioStreamingOggOpusTests;
+			productReference = FA7538A71B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA75388A1B43F07D00F1E36C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Zel Marko";
+				TargetAttributes = {
+					FA7538911B43F07D00F1E36C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FA7538A61B43F07D00F1E36C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FA7538911B43F07D00F1E36C;
+					};
+				};
+			};
+			buildConfigurationList = FA75388D1B43F07D00F1E36C /* Build configuration list for PBXProject "SwiftAudioStreamingOggOpus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA7538891B43F07D00F1E36C;
+			productRefGroup = FA7538931B43F07D00F1E36C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7538911B43F07D00F1E36C /* SwiftAudioStreamingOggOpus */,
+				FA7538A61B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7538901B43F07D00F1E36C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA75389D1B43F07D00F1E36C /* Main.storyboard in Resources */,
+				FA7538A21B43F07D00F1E36C /* LaunchScreen.xib in Resources */,
+				FA75389F1B43F07D00F1E36C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7538A51B43F07D00F1E36C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA75388E1B43F07D00F1E36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA75389A1B43F07D00F1E36C /* ViewController.swift in Sources */,
+				FA7538981B43F07D00F1E36C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7538A31B43F07D00F1E36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7538AE1B43F07D00F1E36C /* SwiftAudioStreamingOggOpusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7538A91B43F07D00F1E36C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7538911B43F07D00F1E36C /* SwiftAudioStreamingOggOpus */;
+			targetProxy = FA7538A81B43F07D00F1E36C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA75389B1B43F07D00F1E36C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA75389C1B43F07D00F1E36C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA7538A01B43F07D00F1E36C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7538A11B43F07D00F1E36C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA7538AF1B43F07D00F1E36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA7538B01B43F07D00F1E36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7538B21B43F07D00F1E36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftAudioStreamingOggOpus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA7538B31B43F07D00F1E36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftAudioStreamingOggOpus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA7538B51B43F07D00F1E36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftAudioStreamingOggOpusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAudioStreamingOggOpus.app/SwiftAudioStreamingOggOpus";
+			};
+			name = Debug;
+		};
+		FA7538B61B43F07D00F1E36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftAudioStreamingOggOpusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftAudioStreamingOggOpus.app/SwiftAudioStreamingOggOpus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA75388D1B43F07D00F1E36C /* Build configuration list for PBXProject "SwiftAudioStreamingOggOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7538AF1B43F07D00F1E36C /* Debug */,
+				FA7538B01B43F07D00F1E36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7538B11B43F07D00F1E36C /* Build configuration list for PBXNativeTarget "SwiftAudioStreamingOggOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7538B21B43F07D00F1E36C /* Debug */,
+				FA7538B31B43F07D00F1E36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA7538B41B43F07D00F1E36C /* Build configuration list for PBXNativeTarget "SwiftAudioStreamingOggOpusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7538B51B43F07D00F1E36C /* Debug */,
+				FA7538B61B43F07D00F1E36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA75388A1B43F07D00F1E36C /* Project object */;
+}
