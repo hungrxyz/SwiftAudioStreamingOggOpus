@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1277EF1B4440A00047FB3E /* CSIOpusEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1277EE1B4440A00047FB3E /* CSIOpusEncoder.m */; };
+		FA1277FB1B4440DD0047FB3E /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1277F21B4440DD0047FB3E /* libogg.a */; };
+		FA1277FC1B4440DD0047FB3E /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1277F61B4440DD0047FB3E /* libopus.a */; };
 		FA7538981B43F07D00F1E36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7538971B43F07D00F1E36C /* AppDelegate.swift */; };
 		FA75389A1B43F07D00F1E36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7538991B43F07D00F1E36C /* ViewController.swift */; };
 		FA75389D1B43F07D00F1E36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA75389B1B43F07D00F1E36C /* Main.storyboard */; };
@@ -26,6 +29,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1277EC1B44409F0047FB3E /* SwiftAudioStreamingOggOpus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAudioStreamingOggOpus-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA1277ED1B4440A00047FB3E /* CSIOpusEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSIOpusEncoder.h; sourceTree = "<group>"; };
+		FA1277EE1B4440A00047FB3E /* CSIOpusEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSIOpusEncoder.m; sourceTree = "<group>"; };
+		FA1277F11B4440DD0047FB3E /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
+		FA1277F21B4440DD0047FB3E /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libogg.a; sourceTree = "<group>"; };
+		FA1277F31B4440DD0047FB3E /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
+		FA1277F41B4440DD0047FB3E /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
+		FA1277F61B4440DD0047FB3E /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		FA1277F71B4440DD0047FB3E /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		FA1277F81B4440DD0047FB3E /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		FA1277F91B4440DD0047FB3E /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		FA1277FA1B4440DD0047FB3E /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
 		FA7538921B43F07D00F1E36C /* SwiftAudioStreamingOggOpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAudioStreamingOggOpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7538961B43F07D00F1E36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7538971B43F07D00F1E36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1277FC1B4440DD0047FB3E /* libopus.a in Frameworks */,
+				FA1277FB1B4440DD0047FB3E /* libogg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +73,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1277EB1B4440830047FB3E /* Opus Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				FA1277ED1B4440A00047FB3E /* CSIOpusEncoder.h */,
+				FA1277EE1B4440A00047FB3E /* CSIOpusEncoder.m */,
+			);
+			name = "Opus Encoder";
+			sourceTree = "<group>";
+		};
+		FA1277F01B4440DD0047FB3E /* Ogg */ = {
+			isa = PBXGroup;
+			children = (
+				FA1277F11B4440DD0047FB3E /* config_types.h */,
+				FA1277F21B4440DD0047FB3E /* libogg.a */,
+				FA1277F31B4440DD0047FB3E /* ogg.h */,
+				FA1277F41B4440DD0047FB3E /* os_types.h */,
+			);
+			name = Ogg;
+			path = ../../../../../../Documents/Developer/Ogg;
+			sourceTree = "<group>";
+		};
+		FA1277F51B4440DD0047FB3E /* Opus */ = {
+			isa = PBXGroup;
+			children = (
+				FA1277F61B4440DD0047FB3E /* libopus.a */,
+				FA1277F71B4440DD0047FB3E /* opus.h */,
+				FA1277F81B4440DD0047FB3E /* opus_defines.h */,
+				FA1277F91B4440DD0047FB3E /* opus_multistream.h */,
+				FA1277FA1B4440DD0047FB3E /* opus_types.h */,
+			);
+			name = Opus;
+			path = ../../../../../../Documents/Developer/Opus;
+			sourceTree = "<group>";
+		};
 		FA7538891B43F07D00F1E36C = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +130,11 @@
 			children = (
 				FA7538971B43F07D00F1E36C /* AppDelegate.swift */,
 				FA7538991B43F07D00F1E36C /* ViewController.swift */,
+				FA1277EB1B4440830047FB3E /* Opus Encoder */,
 				FA75389B1B43F07D00F1E36C /* Main.storyboard */,
+				FA1277EC1B44409F0047FB3E /* SwiftAudioStreamingOggOpus-Bridging-Header.h */,
+				FA1277F01B4440DD0047FB3E /* Ogg */,
+				FA1277F51B4440DD0047FB3E /* Opus */,
 				FA75389E1B43F07D00F1E36C /* Images.xcassets */,
 				FA7538A01B43F07D00F1E36C /* LaunchScreen.xib */,
 				FA7538951B43F07D00F1E36C /* Supporting Files */,
@@ -213,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA75389A1B43F07D00F1E36C /* ViewController.swift in Sources */,
+				FA1277EF1B4440A00047FB3E /* CSIOpusEncoder.m in Sources */,
 				FA7538981B43F07D00F1E36C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +396,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftAudioStreamingOggOpus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Devxhkl/Documents/Developer/Ogg,
+					/Users/Devxhkl/Documents/Developer/Opus,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAudioStreamingOggOpus/SwiftAudioStreamingOggOpus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +414,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftAudioStreamingOggOpus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Devxhkl/Documents/Developer/Ogg,
+					/Users/Devxhkl/Documents/Developer/Opus,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAudioStreamingOggOpus/SwiftAudioStreamingOggOpus-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +480,7 @@
 				FA7538B31B43F07D00F1E36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA7538B41B43F07D00F1E36C /* Build configuration list for PBXNativeTarget "SwiftAudioStreamingOggOpusTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +489,7 @@
 				FA7538B61B43F07D00F1E36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
