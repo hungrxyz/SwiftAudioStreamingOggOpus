@@ -28,7 +28,7 @@
 
 @interface CSIOpusEncoder : NSObject
 
-+ (CSIOpusEncoder*)encoderWithSampleRate:(double)sampleRate channels:(int)channels frameDuration:(double)frameDuration;
++ (CSIOpusEncoder *)getEncoder;
 
 - (id)initWithSampleRate:(double)sampleRate channels:(int)channels frameDuration:(double)frameDuration;
 

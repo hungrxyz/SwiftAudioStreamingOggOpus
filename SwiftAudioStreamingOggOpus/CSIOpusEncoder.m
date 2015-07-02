@@ -70,9 +70,9 @@
     return self;
 }
 
-+ (CSIOpusEncoder *)encoderWithSampleRate:(double)sampleRate channels:(int)channels frameDuration:(double)frameDuration
++ (CSIOpusEncoder *)getEncoder
 {
-    CSIOpusEncoder *encoder = [[CSIOpusEncoder alloc] initWithSampleRate:sampleRate channels:channels frameDuration:frameDuration];
+    CSIOpusEncoder *encoder = [[CSIOpusEncoder alloc] initWithSampleRate:48000 channels:1 frameDuration:0.01];
     return encoder;
 }
 
@@ -82,7 +82,6 @@
 //    CMTime duration = CMSampleBufferGetDuration(sampleBuffer);
 //    Float64 durationInSeconds = CMTimeGetSeconds(duration);
 //    NSLog(@"The sample rate is %f", numSamplesInBuffer / durationInSeconds);
-
     CMBlockBufferRef blockBuffer = CMSampleBufferGetDataBuffer(sampleBuffer);
     AudioBufferList audioBufferList;
      
@@ -94,7 +93,6 @@
                                                             NULL,
                                                             kCMSampleBufferFlag_AudioBufferList_Assure16ByteAlignment,
                                                             &blockBuffer);
-    
     
     return [self encodeBufferList:&audioBufferList];
 }
