@@ -7,12 +7,51 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDelegate {
+    
+    var engine = AVAudioEngine()
+    var session: AVCaptureSession!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        session = AVCaptureSession()
+        
+        let devices = AVCaptureDevice.devices().first as! AVCaptureDevice
+        println(devices)
+        
+        let deviceInput = AVCaptureDeviceInput.deviceInputWithDevice(devices, error: nil) as! AVCaptureDeviceInput
+        session.addInput(deviceInput)
+        println(session)
+        
+        session.startRunning()
+        
+        if session.running {
+            println("running")
+        }
+        
+//        let input = engine.inputNode
+//        let format = input.inputFormatForBus(0)
+//   
+//        input.installTapOnBus(0, bufferSize: 4096, format: format) { (buffer: AVAudioPCMBuffer!, time: AVAudioTime!) -> Void in
+//            println(buffer)
+//    
+//        }
+        
+//        var error: NSError?
+//        
+//        engine.startAndReturnError(&error)
+//        
+//        if error != nil {
+//            println(error?.localizedDescription)
+//        }
+    }
+    
+    func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!) {
+        println(sampleBuffer)
+        println("bull")
     }
 
     override func didReceiveMemoryWarning() {
