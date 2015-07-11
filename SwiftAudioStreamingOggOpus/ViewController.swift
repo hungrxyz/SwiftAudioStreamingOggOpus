@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreMedia
 
 class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDelegate {
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
     var output: AVCaptureAudioDataOutput!
     var sessionQueue: dispatch_queue_t!
     var encoder: CSIOpusEncoder!
+    var bufferCopy: Unmanaged<CMSampleBuffer>?
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -31,19 +33,35 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
         
         session = AVCaptureSession()
         
-        let devices = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
-        println(devices)
+        let microphone = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeAudio)
+        println()
         
-        var deviceInput = AVCaptureDeviceInput.deviceInputWithDevice(devices, error: nil) as! AVCaptureDeviceInput
+        var error: NSError?
+        
+        deviceInput = AVCaptureDeviceInput.deviceInputWithDevice(microphone, error: &error) as! AVCaptureDeviceInput
+        
+        if deviceInput != nil {
+            println(deviceInput.device)
+        }
+        else {
+            println(error!.localizedDescription)
+        }
+        
         output = AVCaptureAudioDataOutput()
-        sessionQueue = dispatch_queue_create("Callback", DISPATCH_QUEUE_SERIAL)
+        sessionQueue = dispatch_queue_create("AudioQueue", nil)
         
-        session.beginConfiguration()
-        session.addInput(deviceInput)
-        output.setSampleBufferDelegate(self, queue: sessionQueue)
-        session.addOutput(output)
-        println(session)
-        session.commitConfiguration()
+            session.beginConfiguration()
+            if session.canAddInput(deviceInput) {
+                session.addInput(deviceInput)
+            }
+            else {
+                println("Cannot add Input to session")
+            }
+            output.setSampleBufferDelegate(self, queue: sessionQueue)
+            session.addOutput(output)
+            println(session)
+            session.commitConfiguration()
+        
         
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.addObserver(self, selector: "printCaptureError:", name: AVCaptureSessionRuntimeErrorNotification, object: nil)
@@ -79,8 +97,23 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
     }
     
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!) {
-        println(session.running)
-        goEncodeForMe(sampleBuffer)
+        
+        if (bufferCopy != nil) {
+            bufferCopy == nil
+        }
+        
+        if CMSampleBufferCreateCopy(kCFAllocatorDefault, sampleBuffer, &bufferCopy) == noErr {
+            
+            goEncodeForMe(bufferCopy!.takeRetainedValue())
+//            println("Copy: \(bufferCopy!.takeRetainedValue())")
+        }
+        else {
+            println("Failed to copy sampleBuffer")
+        }
+        
+        
+        
+        
     }
     
     func goEncodeForMe(buffer: CMSampleBuffer) {
@@ -89,15 +122,15 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
 //            let encodedSamples = self.encoder.encodeSample(buffer)
 //            println(encodedSamples)
 //        })
-        
+        let encodedSamples = self.encoder.encodeSample(buffer)
+            println(encodedSamples)
+
         
         let qualityOfServiceClass = QOS_CLASS_BACKGROUND
         let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
         dispatch_async(backgroundQueue, {
             
-            let encodedSamples = self.encoder.encodeSample(buffer)
-            println(encodedSamples)
-            
+                        
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 
             })
